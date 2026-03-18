@@ -55,7 +55,8 @@
  
     /* HERO */
     .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;background:#07090F;background-image:url('https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1800&q=80&fit=crop');background-size:cover;background-position:center 30%;background-repeat:no-repeat}
-    .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.82) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,.88) 100%);pointer-events:none}
+    .hero::before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(to bottom, rgba(0,0,0,.82) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,.88) 100%);pointer-events:none}
+    .hero>*{position:relative;z-index:1}
     .torch-glow{display:none}
     .hero-eyebrow{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.35em;color:var(--crimson);text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem}
     .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:none}
